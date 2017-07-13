@@ -1,0 +1,94 @@
+ <!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <title>canvas</title>
+
+        <meta name="veiwport" content="width:device-width">
+        <meta charset="UTF-8">
+
+        
+             
+        <script>
+           
+            
+        </script>
+        <style >
+            body{
+                margin:0px;
+            }
+            canvas{
+                
+                background: #44ffaa;
+                border: 1px solid black; 
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                display: inline-block;
+                margin: 100px;
+                z-index: -1;
+
+
+            }
+            #player1,#player2{
+                z-index: 1;
+            }
+            #scoreboard{
+                position: fixed;
+                width: 1000px;
+                margin: auto 100px;
+                border: 1px solid grey;
+
+            }
+            td,th{
+                width: 200px;
+                height: 40px;
+                border: 1px solid grey;
+
+            }
+            th{
+                background: #bbffff;
+            }
+            td{
+                padding-left: 240px;
+                background: #333333;
+                color: white;
+                font-weight: bold; 
+            }
+            #pause{
+                z-index: 1;
+                width: 80px;
+                height: 30px;
+                background: lightgrey;
+                position: fixed;
+                top: 610px;
+                left: 100px;
+                border: 1px solid grey;
+                color: #333333;
+            }
+
+
+        </style>
+    </head >
+    <body >
+           <table id="scoreboard">
+               <tr>
+                   <th>player1</th>
+                   <th>player2</th>
+               </tr>
+               <tr>
+                   <td><div id="player1">0</div></td>
+                   <td><div id="player2">0</div></td>
+               </tr>
+           </table>
+           
+          <!--  <div id="score"><span>player1 score:</span> <div id="player1">0</div></div>
+           <div id="score"><span>player2 score:</span> <div id="player2">0</div></div> -->
+           <canvas id="canvas">
+               
+           </canvas>
+           <input type="button" name="btn" value="pause" id="pause" onclick="changeStatus()">
+           
+
+           <script type="text/javascript" src="pr2.js"></script>
+    </body>
+</html>
